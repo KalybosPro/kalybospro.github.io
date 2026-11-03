@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Not found</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      // An address below /frus/ that is not a file here belonged to the widget gallery, which
+      // has moved: send it on, path, query and #/route included. Anything else is a real 404.
+      if (/^\/frus(\/|$)/.test(location.pathname)) {
+        const rest = location.pathname.replace(/^\/frus/, '') || '/';
+        location.replace('https://frus-rs.github.io/frus' + rest + location.search + location.hash);
+      }
+    </script>
+    <style>
+      body { font: 16px/1.5 system-ui, sans-serif; margin: 3rem auto; max-width: 36rem; padding: 0 1rem; }
+    </style>
+  </head>
+  <body>
+    <p>There is nothing at this address. The frus widget gallery is at
+      <a href="https://frus-rs.github.io/frus/">frus-rs.github.io/frus</a>.</p>
+  </body>
+</html>

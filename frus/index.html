@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The frus widget gallery has moved</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://frus-rs.github.io/frus/" />
+    <!-- Without JavaScript: the gallery's front page. -->
+    <meta http-equiv="refresh" content="0; url=https://frus-rs.github.io/frus/" />
+    <script>
+      // The same address at the new place: the path below /frus/, the query and the #/route,
+      // so that a link to one widget's demo still opens that demo.
+      const rest = location.pathname.replace(/^\/frus/, '') || '/';
+      location.replace('https://frus-rs.github.io/frus' + rest + location.search + location.hash);
+    </script>
+    <style>
+      body { font: 16px/1.5 system-ui, sans-serif; margin: 3rem auto; max-width: 36rem; padding: 0 1rem; }
+    </style>
+  </head>
+  <body>
+    <p>The frus widget gallery has moved to
+      <a href="https://frus-rs.github.io/frus/">frus-rs.github.io/frus</a>.</p>
+  </body>
+</html>
